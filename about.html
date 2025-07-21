@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/index.html" class="logo">Hiking Jateng</a>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/rekomendasi.html">Rekomendasi</a></li>
+                <li><a href="/galeri.html">Galeri</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+            <button id="theme-toggle" class="small-button">Dark Light</button>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h1>Tentang Hiking Jateng</h1>
+            <p>
+                Hiking Jateng adalah platform yang didedikasikan untuk para pecinta hiking di Jawa Tengah. Kami
+                menyediakan informasi mendalam tentang destinasi hiking terbaik, tips keamanan, dan galeri foto dari
+                gunung-gunung yang ada di wilayah ini.
+            </p>
+            <p>
+                Tujuan kami adalah membantu para pendaki, baik pemula maupun yang berpengalaman, untuk menemukan
+                pengalaman hiking yang aman, menyenangkan, dan penuh petualangan. Kami percaya bahwa hiking adalah cara
+                terbaik untuk menikmati keindahan alam Jawa Tengah dan menjaga keseimbangan jiwa dan raga.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h1>Hubungi Kami</h1>
+            <p>Jika Anda memiliki pertanyaan atau masukan, silakan hubungi kami melalui formulir di bawah ini:</p>
+            <form onsubmit="return validateForm();">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hiking Jateng. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
